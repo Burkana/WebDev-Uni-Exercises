@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+   
+        .card-img-top {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover; 
+        }
+    
+        .card-section {
+            padding-top: 5rem; 
+            margin-top: -5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-geo-alt-fill"></i>Tourist Guide
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                           <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#sofiaModal">
+                            Sofia - Alexander Nevski
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                         <button class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#eiffelModal">
+                            Paris - Eiffel Tower
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 80px;">
+        <h2 class="text-center mb-5">Featured Destinations</h2>
+        
+        <div class="row row-cols-1 row-cols-md-3 mb-5  d-flex d-flex justify-content-center gap-4">
+            
+            <div class="col card-section" id="sofia-card">
+                <div class="card shadow-sm h-100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Catedral_de_Alejandro_Nevski_--_2019_--_Sof%C3%ADa%2C_Bulgaria.jpg/500px-Catedral_de_Alejandro_Nevski_--_2019_--_Sof%C3%ADa%2C_Bulgaria.jpg" class="card-img-top" alt="Alexander Nevski Cathedral, Sofia">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Sofia, Bulgaria - Alexander Nevski</h5>
+                        <p class="card-text">One of the largest Eastern Orthodox cathedrals in the world, famous for its magnificent gold-plated domes and rich history.</p>
+                     
+                    </div>
+                </div>
+            </div>
+
+            <div class="col card-section" id="eiffel-card">
+                <div class="card shadow-sm h-100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/500px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg" class="card-img-top" alt="Eiffel Tower, Paris">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Paris, France - Eiffel Tower</h5>
+                        <p class="card-text">The iconic wrought-iron lattice tower on the Champ de Mars, a global cultural icon of France and the most-visited paid monument in the world.</p>
+                       
+                    </div>
+                </div>
+            </div>
+            
+        </div> </div> <div class="modal fade" id="sofiaModal" tabindex="-1" aria-labelledby="sofiaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sofiaModalLabel">Alexander Nevski Cathedral, Sofia Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Alexander Nevski Cathedral</h3>
+                    <p class="lead">Built in Neo-Byzantine style, the cathedral was consecrated in 1912 and is dedicated to the Russian saint Alexander Nevsky, in gratitude for Russian aid in the Russo-Turkish War (1877–1878) which led to the Liberation of Bulgaria.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="eiffelModal" tabindex="-1" aria-labelledby="eiffelModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eiffelModalLabel">Eiffel Tower, Paris Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3>The Eiffel Tower</h3>
+                    <p class="lead">Constructed from 1887 to 1889 as the entrance to the 1889 World's Fair, it was initially criticized by some of France's leading artists and intellectuals for its design but has become a global symbol of France and its capital.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-primary fixed-bottom text-white text-center ">
+        Best tourist destinations
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

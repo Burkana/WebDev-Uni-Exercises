@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('pictures/Gemini_Generated_Image_93cvt793cvt793cv.png');
+      -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+header {
+    background: brown;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.container {  
+    max-width: 1200px;
+    margin: 10px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+.video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-bottom: 20px;
+}
+.recipeProductConteiner {
+    margin-top: 20px;
+     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.recipeProductConteiner p{
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container p{
+    width: 30%;
+}
+.recipeTitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+    
+}
+.recipeTitle p{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
