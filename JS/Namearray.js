@@ -4,6 +4,7 @@ function Name(input){
     for(i = 0;  i < 5; i++)
         if(n >= name[i].length)
     console.log(name[i]);
+
     
 }
 function Calendar(input){
