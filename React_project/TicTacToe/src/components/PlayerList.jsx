@@ -1,4 +1,8 @@
  import {useState} from "react";
+ import '../App.jsx';
+ import '../App.css';
+
+
 function Player(props){
 const [isEditing, setIsEditing] = useState(false)
 const [playerName, setName] = useState(props.name)
@@ -23,7 +27,7 @@ if(isEditing){
 }
     return(
            
-            <li>
+            <li className={props.isActive ? "active" : undefined}>
               <span className="player">  
               {editedName}
               <span className="player-symbol">{props.symbol}</span> 
