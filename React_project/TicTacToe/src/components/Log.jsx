@@ -1,9 +1,9 @@
-function Log(){
+
+function Log(props){
     return(
-        <div>     
-            <h2>LOG</h2>
-            <p></p>
-        </div>
+        <ol id="log">
+          {props.turns.map((turn) => { return <li key={`${turn.square.row}-${turn.square.column}`}>{turn.player} selected {turn.square.row}, {turn.square.column} </li>})}
+        </ol>
     )
 }
 export default Log;
